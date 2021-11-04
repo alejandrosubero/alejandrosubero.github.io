@@ -1,0 +1,44 @@
+<div class="container-fluid mt-4 ">
+  <div class="col-sm-2 col-md-3 col-lg-3 col-xl-3 d-none  d-sm-block d-md-block d-lg-block d-xl-block fondoMenu pt-2 fixed-top" id="bi">
+    <div class="d-flex flex-column">
+      <div class="p-2 text-center">
+        <p class="h5 nombre bt">Alejandro Andres Subero</p>
+      </div>
+      <div class="p-2">
+        <img class="img-fluid img-profile rounded-circle w-50 mx-auto d-block" src="../../../assets/yo.png" alt="">
+      </div>
+      <div  class="menueulli itemMenue">
+        <ul class=" ">
+          <li class="bt"><a class="text-white" (click)="scrollElemet(target)">{{ 'About' | translate }}</a></li>
+          <li class="bt"> <a class="text-white" (click)="scrollElemet(target1)">{{ 'Experience' | translate }}</a></li>
+          <li class="bt"> <a class="text-white" (click)="scrollElemet(target2)">{{ 'Education' | translate }}</a></li>
+          <li class="bt"> <a class="text-white" (click)="scrollElemet(target3)">{{ 'Skills' | translate }}</a></li>
+          <li class="bt"> <a class="text-white" (click)="scrollElemet(target4)">{{ 'Interests' | translate }}</a></li>
+          <li class="bt"> <a class="text-white" (click)="scrollElemet(target5)">{{ 'Competences0' | translate }}</a></li>
+          <li class="bt"> <a class="text-white" [routerLink]="[ '/contact' ]">{{ 'contact' | translate }}</a></li>
+          <!-- <li class="bt"> <a class="text-white" (click)="scrollElemet(target6)">{{ 'Recommendations' | translate }}</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row pt-4">
+    <div
+      class="col-sm-2 col-md-3 col-lg-3 col-xl-3 d-none  d-sm-block d-md-block d-lg-block d-xl-block fondoMenu pt-2">
+      <div></div>
+    </div>
+
+    <div class="col-12 col-sm-10 col-md-9 col-lg-9 col-xl-9 fondoCuerpo">
+      <div class="d-flex flex-column">
+        <div class="p-2 pt-4" #target><app-quiensoy></app-quiensoy></div>
+        <div class="p-2 pt-5" #target1><app-experiencia></app-experiencia></div>
+        <div class="p-2 pt-5" #target2>  <app-educacion></app-educacion></div>
+        <div class="p-2 pt-5" #target3><app-skill></app-skill></div>
+        <div class="p-2 pt-5" #target4><app-interes></app-interes></div>
+        <div class="p-2 pt-4" #target5><app-competemcias></app-competemcias></div>
+        <div class="p-2 pt-4" #target6><app-recomendaciones></app-recomendaciones></div>
+      </div>
+    </div>
+  </div>
+</div>

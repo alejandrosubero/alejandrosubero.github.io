@@ -1,0 +1,37 @@
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <!-- <img src="../../../assets/panel1.png" alt="" width="200"> -->
+        </a>
+
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            (click)="iscollapse = !iscollapse" [attr.aria-expanded]="!iscollapse"
+            aria-controls="navbarSupportedContet" 
+            data-targe="#navbarSupportedContet"
+            data-toggle="collapse"
+            aria-label="Toogle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse p-2" id="bs-example-navbar-collapse-1" [ngbCollapse]="iscollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item  nav-bt"><a class="nav-link text-white" [routerLink]="[ '/menu' ]">Profile</a></li>
+                <li class="nav-item  nav-bt"><a class="nav-link text-white" [routerLink]="[ '/portafolio' ]" >Portafolio</a></li>
+                <!-- <li class="nav-item  nav-bt"><a class="nav-link text-white" href="#">Register</a></li> -->
+                <li class="nav-item  nav-bt"><a class="nav-link text-white" [routerLink]="[ '/contact' ]">{{ 'contact' | translate }}</a></li> 
+                <!-- <li class="nav-item  nav-bt"><a class="nav-link text-white" href="#" (click)="dowload()">Dowload</a></li> -->
+                 <li class="nav-item  nav-bt">
+                     <a class="nav-link text-white" 
+                         href=" https://drive.google.com/file/d/1AIPXJt-Nvr4jRBRCKWcCTRA9zf30Vmom/view?usp=sharing" 
+                         target="_blank" >Dowload CV
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+ 
