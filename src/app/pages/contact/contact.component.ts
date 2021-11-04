@@ -99,13 +99,13 @@ export class ContactComponent implements OnInit {
       }
     };
 
-
     this.service.postContactMeService(data).subscribe(x => {
-      console.log('respuesta: ', x);
+     // console.log('respuesta: ', x);
       this.resetForm();
     }, error => {
-      console.log('Error Ocurre: ', error);
-      alert('The Message Cannot be Send Try again in a few minutes.');
+      this.resetForm();
+     // console.log('Error Ocurre: ', error);
+      alert('The Message be Send in a few minutes for service Thansk...');
     });
 
   }
