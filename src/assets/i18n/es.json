@@ -161,9 +161,9 @@
     "education-5-date": "Graduado en el año 2007",
     
     "nombre-person": "Alejandro Subero",
-    "personal-data-address": "Argentina Buenos Aires Capital Federal, C.A.B.A",
-    "personal-data-phone": "(054) 11-537451-97.",
-    "personal-data-mail": "Alejandrosubero53@gmail.com",
+    "personal-data-address": "",
+    "personal-data-phone": "",
+    "personal-data-mail": "alejandrosubero.us@gmail.com",
 
     "send-mail-line-1":"Programa para escritorio para envio masivo de correos individualmente.",
     "send-mail-line-2": "Creado con Java utilizando Java Swing, java Mail, MySql.",

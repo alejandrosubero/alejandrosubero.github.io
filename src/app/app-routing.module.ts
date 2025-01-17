@@ -6,7 +6,7 @@ import { MenueComponent } from './pages/menue/menue.component';
 import { FoliosComponent } from './protafolio/folios/folios.component';
 
 const routes: Routes = [
-  { path: '/', component: MenueComponent },
+ // { path: '/', component: MenueComponent },
   { path: 'menu', component: MenueComponent },
   { path: 'home', component: HomeComponent },
   { path: 'portafolio', component: FoliosComponent },
